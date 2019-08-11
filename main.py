@@ -89,6 +89,10 @@ print("start at epoch {}".format(start_epoch))
 
 
 def train():
+    """
+
+    :rtype: object
+    """
     for epoch_idx in range(start_epoch, args.epochs):
         adjust_learning_rate(optimizer, epoch_idx, args.lr, args.lrepochs)
 
